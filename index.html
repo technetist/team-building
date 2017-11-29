@@ -25,11 +25,16 @@
 
 
 
-    $("#placeholder").click(function() {
-      alert('hi!');
-      $("#bg-img").toggleClass('toggle')
-      
+    $('#map').on('click', '#placeholder', function(){
+      $('#bg-img').toggleClass('toggle');
+      $('#map').toggleClass('toggle');
     });
+    $('#bg-img').click('#bg-img', function(){
+        $('#bg-img').toggleClass('toggle');
+        $('#map').toggleClass('toggle');
+    });
+    
+    
   </script>
   <script src="assets/js/app.js"></script>
 </body>
