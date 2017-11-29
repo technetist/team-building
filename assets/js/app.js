@@ -103,15 +103,33 @@ map.drawPolyline({
   strokeWeight: 4
 });
 
-//add markers
-map.addMarker({
-	lat: 48.3967021387,
-	lng: 15.5190722644,
-	title: 'A Point',
+var markers = [
+    {  lat: 48.3967021387,
+        lng: 15.5190722644,
+        title: 'A Point',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/zac.jpeg">'
+  		}},
 
-	infoWindow: {
-	  content: '<img id="placeholder" src="assets/img/zac.jpeg">'
-	}
-});
+    {  lat: 48.41,
+        lng: 15.53,
+        title: 'A d',
+        infoWindow: {
+            content: '<img class="placeholder" src="assets/img/zac.jpeg">'
+        }}
+];
+
+
+map.addMarkers(markers);
+
+function myClick(id){
+	console.log(markers[id]);
+	markers[id].infoWindow.close();
+}
+
+
+
+
+
 
 
