@@ -17,10 +17,9 @@
 	background: url(../img/zac.jpeg) no-repeat center center;
 	background-size: cover;
 }
-<<<<<<< HEAD
 #map.toggle {
 	visibility: hidden;
-=======
+}
 #bg-img.toggle {
 	background: none;
 }
@@ -33,5 +32,4 @@
 #back{
 	margin-left: 10%;
 	margin-top: 2%;
->>>>>>> cf83340871a1dd8018c0d8c93c2386d4cf933b4b
 }
