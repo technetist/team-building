@@ -105,14 +105,13 @@ map.drawPolyline({
 
 //add markers
 map.addMarker({
-  lat: 48.3967021387,
-  lng: 15.5190722644,
-  title: 'A Point',
-  
-  infoWindow: {
-	  content: '<img class="placeholder" src="assets/img/zac.jpeg">'
+	lat: 48.3967021387,
+	lng: 15.5190722644,
+	title: 'A Point',
+
+	infoWindow: {
+	  content: '<img id="placeholder" src="assets/img/zac.jpeg">'
 	}
 });
-
 
 
