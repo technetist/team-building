@@ -2,6 +2,7 @@
   width: 80%;
   margin: 0 10%;
   height: 400px;
+  z-index: 6;
 }
 #placeholder {
   width: 100%;
@@ -12,6 +13,7 @@
 	width: 100%;
   	height: 100%;
 	background: none;
+	z-index: 4;
 }
 #bg-img.toggle {
 	background: url(../img/zac.jpeg) no-repeat center center;
@@ -20,16 +22,15 @@
 #map.toggle {
 	visibility: hidden;
 }
-#bg-img.toggle {
-	background: none;
-}
 
 #next{
 	margin-left: 70%;
 	margin-top: 2%;
+	z-index: 1;
 }
 
 #back{
 	margin-left: 10%;
 	margin-top: 2%;
+	z-index: 2;
 }
