@@ -104,19 +104,109 @@ map.drawPolyline({
 });
 
 var markers = [
-    {  lat: 48.3967021387,
-        lng: 15.5190722644,
-        title: 'A Point',
+    {  lat: 48.385983702999795,
+        lng: 15.53316593170166,
+        title: 'Start',
         infoWindow: {
-	  content: '<img class="placeholder" src="assets/img/zac.jpeg">'
+	  content: '<img class="placeholder" src="assets/img/2 Program 2.jpg">'
   		}},
 
-    {  lat: 48.41,
-        lng: 15.53,
-        title: 'A d',
+  	{  lat: 48.38558469483053,
+        lng: 15.53290843963623,
+        title: 'Sport',
         infoWindow: {
-            content: '<img class="placeholder" src="assets/img/zac.jpeg">'
-        }}
+	  content: '<img class="placeholder" src="assets/img/3 Sport.jpg">'
+  		}},
+  	{ lat: 48.38629008214943,
+      lng: 15.533198118209839,
+  	  title: "Project Presentation",
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/7 Project presentation.jpg">'
+  	  }},
+
+	{  lat: 48.38770795233492,
+        lng: 15.533106923103333,
+        title: 'walking through the vinyards',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/8 walk.jpg">'
+  		}},
+
+	{  lat: 48.391818840061795,
+        lng: 15.529035329818726,
+        title: 'train tracks',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/9 Train rails.jpg">'
+  		}},
+  	{ lat:48.39498193139103,
+  	  lng:15.531711101548353,
+  	  title: 'landscape',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/13 landscape.jpg">'
+  	  }},
+  	{  lat: 48.394949874019325,
+        lng: 15.529389381408691,
+        title: 'Discovery',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/15 discovery.jpg">'
+  		}},
+
+  	{  lat: 48.39491425469374,
+        lng: 15.529099702835083,
+        title: 'First Presentation',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/17 Presentation 1.jpg">'
+  		}},
+  	{ lat: 48.395402237284806,
+  	  lng: 15.523997068339668,
+  	  title: 'Discovery #2',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/20 discovery.jpg">'
+  	  }},
+  	{ lat: 48.395345246858604,
+  	  lng: 15.524276018077217,
+  	  title: 'nap',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/23 nap.jpg">'
+  	  }},
+  	{ lat: 48.39768536372553,
+  	  lng: 15.521757960286777,
+  	  title: 'landscape from castle dürnstein',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/25 landscape.jpg">'
+  	  }},
+
+  	{  lat: 48.39766755502342,
+        lng: 15.522093772888184,
+        title: 'Castle',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/27 Castle.jpg">'
+  		}},
+  	{ lat: 48.3977334471901,
+  	  lng: 15.52192050216945,
+  	  title: 'Interview with the Drone Pilot',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/33 Interview drone pilot 2.jpg">'
+  	  }},
+
+    {  lat: 48.394987369,
+        lng: 15.5205328949,
+        title: 'City',
+        infoWindow: {
+            content: '<p>This will be a photo of the city</p>'
+        }},
+
+    {  lat: 48.385328187927016,
+        lng: 15.530891418457031,
+        title: 'Spider Game',
+        infoWindow: {
+            content: '<img class="placeholder" src="assets/img/43 Spider game 2.jpg">'
+        }},
+    { lat: 48.38500398985223,
+      lng: 15.532336593460059,
+      title: 'EPS Group representation',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/39 EPS castle.jpg">'
+  	  }}
 ];
 
 
