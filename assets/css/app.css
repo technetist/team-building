@@ -7,7 +7,7 @@
 #map {
   width: 80%;
   margin: 0 10%;
-  height: 400px;
+  height: 500px;
   z-index: 6;
 }
 #placeholder {
@@ -21,12 +21,21 @@
 	background: none;
 	z-index: 4;
 }
-#bg-img.toggle {
+/*#bg-img.toggle {
 	background: url(../img/zac.jpeg) no-repeat center center;
 	background-size: cover;
 }
 #map.toggle {
 	visibility: hidden;
+}*/
+
+.gm-style-iw {
+width: 800px !important;
+height: 533px !important;
+}
+
+.gm-style img {
+    max-width: 800px !important;
 }
 
 #next{

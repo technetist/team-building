@@ -104,18 +104,67 @@ map.drawPolyline({
 });
 
 var markers = [
-    {  lat: 48.3967021387,
-        lng: 15.5190722644,
-        title: 'A Point',
+    {  lat: 48.385983702999795,
+        lng: 15.53316593170166,
+        title: 'Start',
         infoWindow: {
-	  content: '<img class="placeholder" src="assets/img/zac.jpeg">'
+	  content: '<img class="placeholder" src="assets/img/2 Program 2.jpg">'
   		}},
 
-    {  lat: 48.41,
-        lng: 15.53,
+  	{  lat: 48.38558469483053,
+        lng: 15.53290843963623,
+        title: 'Sport',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/3 Sport.jpg">'
+  		}},
+
+	{  lat: 48.38770795233492,
+        lng: 15.533106923103333,
+        title: 'walking through the vinyards',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/8 walk.jpg">'
+  		}},
+
+	{  lat: 48.391818840061795,
+        lng: 15.529035329818726,
+        title: 'train tracks',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/9 Train rails.jpg">'
+  		}},
+
+  	{  lat: 48.394949874019325,
+        lng: 15.529389381408691,
+        title: 'Discovery',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/15 discovery.jpg">'
+  		}},
+
+  	{  lat: 48.39491425469374,
+        lng: 15.529099702835083,
+        title: 'First Presentation',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/17 Presentation 1.jpg">'
+  		}},
+
+  	{  lat: 48.39766755502342,
+        lng: 15.522093772888184,
+        title: 'Castle',
+        infoWindow: {
+	  content: '<img class="placeholder" src="assets/img/27 Castle.jpg">'
+  		}},
+
+    {  lat: 48.394987369,
+        lng: 15.5205328949,
         title: 'A d',
         infoWindow: {
-            content: '<img class="placeholder" src="assets/img/zac.jpeg">'
+            content: '<img class="placeholder" src="assets/img/8 walk.jpg">'
+        }},
+
+    {  lat: 48.385328187927016,
+        lng: 15.530891418457031,
+        title: 'Spider Game',
+        infoWindow: {
+            content: '<img class="placeholder" src="assets/img/8 walk.jpg">'
         }}
 ];
 
