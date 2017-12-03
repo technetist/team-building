@@ -157,7 +157,7 @@ var markers = [
         lng: 15.5205328949,
         title: 'A d',
         infoWindow: {
-            content: '<img class="placeholder" src="assets/img/8 walk.jpg">'
+            content: '<img class="placeholder" src="assets/img/8 durnstein.jpg">'
         }},
 
     {  lat: 48.385328187927016,
