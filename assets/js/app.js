@@ -157,7 +157,7 @@ var markers = [
         lng: 15.5205328949,
         title: 'City',
         infoWindow: {
-            content: '<p>This will be a photo of the city</p>'
+            content: '<img class="placeholder" src="assets/img/durnstein.jpg">'
         }},
 
     {  lat: 48.385328187927016,
