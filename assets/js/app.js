@@ -155,7 +155,7 @@ var markers = [
 
     {  lat: 48.394987369,
         lng: 15.5205328949,
-        title: 'A d',
+        title: 'City',
         infoWindow: {
             content: '<img class="placeholder" src="assets/img/8 durnstein.jpg">'
         }},
@@ -164,7 +164,7 @@ var markers = [
         lng: 15.530891418457031,
         title: 'Spider Game',
         infoWindow: {
-            content: '<img class="placeholder" src="assets/img/8 walk.jpg">'
+            content: '<img class="placeholder" src="assets/img/43 Spider game 2.jpg">'
         }}
 ];
 
