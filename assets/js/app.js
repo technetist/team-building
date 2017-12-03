@@ -117,6 +117,12 @@ var markers = [
         infoWindow: {
 	  content: '<img class="placeholder" src="assets/img/3 Sport.jpg">'
   		}},
+  	{ lat: 48.38629008214943,
+      lng: 15.533198118209839,
+  	  title: "Project Presentation",
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/7 Project presentation.jpg">'
+  	  }},
 
 	{  lat: 48.38770795233492,
         lng: 15.533106923103333,
@@ -131,7 +137,12 @@ var markers = [
         infoWindow: {
 	  content: '<img class="placeholder" src="assets/img/9 Train rails.jpg">'
   		}},
-
+  	{ lat:48.39498193139103,
+  	  lng:15.531711101548353,
+  	  title: 'landscape',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/13 landscape.jpg">'
+  	  }},
   	{  lat: 48.394949874019325,
         lng: 15.529389381408691,
         title: 'Discovery',
@@ -145,6 +156,24 @@ var markers = [
         infoWindow: {
 	  content: '<img class="placeholder" src="assets/img/17 Presentation 1.jpg">'
   		}},
+  	{ lat: 48.395402237284806,
+  	  lng: 15.523997068339668,
+  	  title: 'Discovery #2',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/20 discovery.jpg">'
+  	  }},
+  	{ lat: 48.395345246858604,
+  	  lng: 15.524276018077217,
+  	  title: 'nap',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/23 nap.jpg">'
+  	  }},
+  	{ lat: 48.39768536372553,
+  	  lng: 15.521757960286777,
+  	  title: 'landscape from castle dürnstein',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/25 landscape.jpg">'
+  	  }},
 
   	{  lat: 48.39766755502342,
         lng: 15.522093772888184,
@@ -152,6 +181,12 @@ var markers = [
         infoWindow: {
 	  content: '<img class="placeholder" src="assets/img/27 Castle.jpg">'
   		}},
+  	{ lat: 48.3977334471901,
+  	  lng: 15.52192050216945,
+  	  title: 'Interview with the Drone Pilot',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/33 Interview drone pilot 2.jpg">'
+  	  }},
 
     {  lat: 48.394987369,
         lng: 15.5205328949,
@@ -165,6 +200,13 @@ var markers = [
         title: 'Spider Game',
         infoWindow: {
             content: '<img class="placeholder" src="assets/img/43 Spider game 2.jpg">'
+        }},
+    { lat: 48.38500398985223,
+      lng: 15.532336593460059,
+      title: 'EPS Group representation',
+  	  infoWindow: {
+  	  	content: '<img class="placeholder" src="assets/img/39 EPS castle.jpg">'
+  	  }}
         }}
 ];
 
