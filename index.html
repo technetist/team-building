@@ -5,24 +5,32 @@
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
+    <div id="bg-img">
+      <div id="map">
 
-  <div id="bg-img" class="">
-    <div id="map">
 
-    </div>
 
-      <img id="back" src="assets/img/back.png"/>
-    <img id="next" onclick="myClick(0);" src="assets/img/next.png"/>
+      </div>
+        <img id="back" src="assets/img/back.png"/>
+  <img id="next" onclick="myClick(0);" src="assets/img/next.png"/>
   </div>
+
   <div class="horizonline">
   	
   	<div class="text">
  	<h3>This Test is a Test</h3>
  	</div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="http://maps.google.com/maps/api/js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyCkJsDkfRpNgYePIgzwtYq7WvgO1E7KWuY"></script>
   <script src="assets/js/gmaps.js"></script>
+  <style type="text/css">
+    .gm-style-iw {
+width: 300px; 
+min-height: 150px;
+}
+  </style>
 
   <script>
     var map = new GMaps({
@@ -34,17 +42,112 @@
 
 
     $('#map').on('click', '#placeholder', function(){
-      $('#bg-img').toggleClass('toggle');
-      $('#map').toggleClass('toggle');
+      alert("hi!");
+      // $('#bg-img').toggleClass('toggle');
+      // $('#map').detach();
     });
-    $('#bg-img').click('#bg-img', function(){
-        $('#bg-img').toggleClass('toggle');
-        $('#map').toggleClass('toggle');
+    // $('#bg-img').click('#bg-img', function(){
+
+    //     $('#bg-img').toggleClass('toggle');
+    //     $('#map').toggleClass('toggle');
+
+    // });
+
+
+
+    // Update position
+$(document).on('submit', '.edit_marker', function(e) {
+  e.preventDefault();
+
+  var $index = $(this).data('marker-index');
+
+  $lat = $('#marker_' + $index + '_lat').val();
+  $lng = $('#marker_' + $index + '_lng').val();
+
+  var template = $('#edit_marker_template').text();
+
+  // Update form values
+  var content = template.replace(/{{index}}/g, $index).replace(/{{lat}}/g, $lat).replace(/{{lng}}/g, $lng);
+
+  map.markers[$index].setPosition(new google.maps.LatLng($lat, $lng));
+  map.markers[$index].infoWindow.setContent(content);
+
+  $marker = $('#markers-with-coordinates').find('li').eq(0).find('a');
+  $marker.data('marker-lat', $lat);
+  $marker.data('marker-lng', $lng);
+});
+
+// Update center
+$(document).on('click', '.pan-to-marker', function(e) {
+  e.preventDefault();
+
+  var lat, lng;
+
+  var $index = $(this).data('marker-index');
+  var $lat = $(this).data('marker-lat');
+  var $lng = $(this).data('marker-lng');
+
+  if ($index != undefined) {
+    // using indices
+    var position = map.markers[$index].getPosition();
+    lat = position.lat();
+    lng = position.lng();
+  }
+  else {
+    // using coordinates
+    lat = $lat;
+    lng = $lng;
+  }
+
+  map.setCenter(lat, lng);
+});
+
+  GMaps.on('marker_added', map, function(marker) {
+    $('#markers-with-index').append('<li><a href="#" class="pan-to-marker" data-marker-index="' + map.markers.indexOf(marker) + '">' + marker.title + '</a></li>');
+
+    $('#markers-with-coordinates').append('<li><a href="#" class="pan-to-marker" data-marker-lat="' + marker.getPosition().lat() + '" data-marker-lng="' + marker.getPosition().lng() + '">' + marker.title + '</a></li>');
+  });
+
+  GMaps.on('click', map.map, function(event) {
+    var index = map.markers.length;
+    var lat = event.latLng.lat();
+    var lng = event.latLng.lng();
+
+    var template = $('#edit_marker_template').text();
+
+    var content = template.replace(/{{index}}/g, index).replace(/{{lat}}/g, lat).replace(/{{lng}}/g, lng);
+
+    map.addMarker({
+      lat: lat,
+      lng: lng,
+      title: 'Marker #' + index,
+      infoWindow: {
+        content : content
+      }
     });
+});
+
+
+        
     
     
   </script>
   <script src="assets/js/app.js"></script>
+  
+  <script type="text/html" id="edit_marker_template">
+    <h4>Edit Marker</h4>
+    <form class="edit_marker" action="#" method="post" data-marker-index="{{index}}">
+      <p>
+        <label for="marker_{{index}}_lat">Latitude:</label>
+        <input type="text" id="marker_{{index}}_lat" value="{{lat}}" />
+      </p>
+      <p>
+        <label for="marker_{{index}}_lng">Longitude:</label>
+        <input type="text" id="marker_{{index}}_lng" value="{{lng}}" />
+      </p>
+      <input type="submit" value="Update position" />
+    </form>
+  </script>
 
 
 </body>
