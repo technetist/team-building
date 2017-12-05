@@ -207,7 +207,6 @@ var markers = [
   	  infoWindow: {
   	  	content: '<img class="placeholder" src="assets/img/39 EPS castle.jpg">'
   	  }}
-        }}
 ];
 
 
