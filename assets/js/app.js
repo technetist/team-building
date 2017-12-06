@@ -226,7 +226,6 @@ var markers = [
 
 
 
-
     { lat: 48.39768536372553,
   	  lng: 15.521757960286777,
   	  title: 'landscape 3 from castle dürnstein',
@@ -272,14 +271,14 @@ var markers = [
         lng: 15.531168775632977,
         title: 'Landscape 1 of the island',
         infoWindow: {
-            content: '<img class="placeholder" src="36 landscape.jpg">'
+            content: '<img class="placeholder" src="assets/img/36 landscape.jpg">'
         }},
 
     {  lat: 48.38499152065427,
         lng: 15.53172399289906,
         title: 'Landscape 2 of the island',
         infoWindow: {
-            content: '<img class="placeholder" src="37 landscape.jpg">'
+            content: '<img class="placeholder" src="assets/img/37 landscape.jpg">'
         }},
 
     {  lat: 48.38554906894901,
