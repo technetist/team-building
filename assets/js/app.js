@@ -333,6 +333,7 @@ function myClick(){
 		console.log("this should just trigger ONCE")
 		var element = document.getElementById("title")
 		element.innerHTML = markers[0].title
+		map.markers[0].setIcon('assets/img/marker_green.png')
 		map.setCenter(markers[0].lat,markers[0].lng)
 		idIndex = 0
 	}
@@ -343,6 +344,8 @@ function myClick(){
 		idIndex+=1
 
 		console.log(markers[idIndex]);
+		map.markers[idIndex-1].setIcon('assets/img/blank.png')
+		map.markers[idIndex].setIcon('assets/img/marker_green.png')
 		var element = document.getElementById("title")
 		element.innerHTML= markers[idIndex].title
 		map.setCenter(markers[idIndex].lat, markers[idIndex].lng)
