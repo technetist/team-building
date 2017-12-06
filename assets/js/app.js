@@ -351,9 +351,19 @@ function myClick(){
 		map.setCenter(markers[idIndex].lat, markers[idIndex].lng)
 	}else{
 		//Move Through the different options (e.g. ImageHide on hoverIndex0; Image Show on hoverImage1; go to next on hoverImage2)
-		if(hoverIndex < 3){
-			hoverIndex += 1
-		}
+		var element = document.getElementById("imgParent")
+ 			switch(hoverIndex){
+ 				case 0:
+ 					element.innerHTML = markers[idIndex].infoWindow.content
+ 					break;
+ 				case 1:
+ 					element.innerHTML = ""
+ 					break;
+ 				case 2:
+ 					console.log("you shoulndt be here right now ._.")
+ 					break;
+ 			}
+  			hoverIndex += 1
 	}
 
 }
