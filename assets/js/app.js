@@ -173,7 +173,12 @@ var markers = [
         infoWindow: {
 	  content: '<img class="placeholder" src="assets/img/17 Presentation 1.jpg">'
   		}},
-
+  	{  lat: 48.396164478098115,
+  	   lng: 15.526604175563534,
+  	   title: 'Uphill',
+  	   infoWindow: {
+  	   	content: '<img class="placeholder" src="assets/img/18a uphill walk.jpg">'
+  	   }},
     {  lat: 48.396862595178725,
         lng: 15.525668654590845,
         title: 'Walk',
@@ -319,10 +324,36 @@ var markers = [
 
 
 map.addMarkers(markers);
+var idIndex = -1
+var hoverIndex = 0;
+function myClick(){
+	console.log("before: " + idIndex)
+	console.log("before: " + hoverIndex)
+	//Move To FirstMarker if nothing happened so far
+	if(idIndex == -1){
+		console.log("this should just trigger ONCE")
+		var element = document.getElementById("title")
+		element.innerHTML = markers[0].title
+		map.setCenter(markers[0].lat,markers[0].lng)
+		idIndex = 0
+	}
+	console.log("after: " + idIndex)
+	console.log("after: " + hoverIndex)
+	if(hoverIndex == 2){
+		hoverIndex = 0
+		idIndex+=1
 
-function myClick(id){
-	console.log(markers[id]);
-	markers[id].infoWindow.close();
+		console.log(markers[idIndex]);
+		var element = document.getElementById("title")
+		element.innerHTML= markers[idIndex].title
+		map.setCenter(markers[idIndex].lat, markers[idIndex].lng)
+	}else{
+		//Move Through the different options (e.g. ImageHide on hoverIndex0; Image Show on hoverImage1; go to next on hoverImage2)
+		if(hoverIndex < 3){
+			hoverIndex += 1
+		}
+	}
+
 }
 
 
