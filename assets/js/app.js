@@ -277,14 +277,14 @@ var markers = [
         lng: 15.531168775632977,
         title: 'Landscape 1 of the island',
         infoWindow: {
-            content: '<img class="placeholder" src="36 landscape.jpg">'
+            content: '<img class="placeholder" src="assets/img/36 landscape.jpg">'
         }},
 
     {  lat: 48.38499152065427,
         lng: 15.53172399289906,
         title: 'Landscape 2 of the island',
         infoWindow: {
-            content: '<img class="placeholder" src="37 landscape.jpg">'
+            content: '<img class="placeholder" src="assets/img/37 landscape.jpg">'
         }},
 
     {  lat: 48.38554906894901,
@@ -350,6 +350,18 @@ function myClick(){
 	}else{
 		//Move Through the different options (e.g. ImageHide on hoverIndex0; Image Show on hoverImage1; go to next on hoverImage2)
 		if(hoverIndex < 3){
+			var element = document.getElementById("imgParent")
+			switch(hoverIndex){
+				case 0:
+					element.innerHTML = markers[idIndex].infoWindow.content
+					break;
+				case 1:
+					element.innerHTML = ""
+					break;
+				case 2:
+					console.log("you shoulndt be here right now ._.")
+					break;
+			}
 			hoverIndex += 1
 		}
 	}
