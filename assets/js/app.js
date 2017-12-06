@@ -173,7 +173,12 @@ var markers = [
         infoWindow: {
 	  content: '<img class="placeholder" src="assets/img/17 Presentation 1.jpg">'
   		}},
-
+  	{  lat: 48.396164478098115,
+  	   lng: 15.526604175563534,
+  	   title: 'Uphill',
+  	   infoWindow: {
+  	   	content: '<img class="placeholder" src="assets/img/18a uphill walk.jpg">'
+  	   }},
     {  lat: 48.396862595178725,
         lng: 15.525668654590845,
         title: 'Walk',

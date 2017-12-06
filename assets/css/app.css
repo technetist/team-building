@@ -5,9 +5,9 @@
 
 
 #map {
-  width: 80%;
-  margin: 0 10%;
-  height: 500px;
+  width: 100%;
+  //margin: 0 10%;
+  height: 650px;
   z-index: 6;
 }
 #placeholder {
@@ -39,15 +39,21 @@ height: 533px !important;
 }
 
 #next{
-	margin-left: 70%;
-	margin-top: 2%;
-	z-index: 1;
+	position:absolute;
+	bottom:-10px;
+	right:200px;
+	//margin-left: 70%;
+	//margin-top: 2%;
+	z-index: 10;
 }
 
 #back{
-	margin-left: 10%;
-	margin-top: 2%;
-	z-index: 2;
+	position:absolute;
+	bottom:-10px;
+	left:200px;
+	//margin-left: 10%;
+	//margin-top: 2%;
+	z-index: 10;
 }
 
 .horizonline{
@@ -59,7 +65,9 @@ height: 533px !important;
 	background: url(../img/horizonline.png);
 }
 
+
 .horizonline .text{
+	font-family: 'Barlow Condensed', sans-serif;
 	position:relative;
 	top:125px;
 	text-align:center;
